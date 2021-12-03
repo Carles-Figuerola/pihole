@@ -1,0 +1,7 @@
+[Unit]
+Description=Exports data from pihole to graphite
+
+[Service]
+Type=oneshot
+ExecStart=/home/pi/pi-hole-export.sh
+StandardOutput=journal+console

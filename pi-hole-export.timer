@@ -1,0 +1,11 @@
+[Unit]
+Description=Run pihole-export every minute
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+AccuracySec=1min
+Unit=pi-hole-export.service 
+
+[Install]
+WantedBy=timers.target
+
